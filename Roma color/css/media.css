@@ -53,6 +53,9 @@
     .collapse {
         margin-right: 0;
     }
+    .navbar ul li:hover > ul {
+        visibility: visible;
+    }
     /*=========== Banner part start ===========*/
     #banner {
         margin-bottom: 52px;
@@ -182,6 +185,9 @@
     .collapse {
         margin-right: 0;
     }
+    .navbar ul li:hover > ul {
+        visibility: visible;
+    }
     /*=========== Banner part start ===========*/
     #banner {
         margin-bottom: 52px;
@@ -303,6 +309,9 @@
     .collapse {
         margin-right: 0;
     }
+    .navbar ul li:hover > ul {
+        visibility: visible;
+    }
     /*=========== Banner part start ===========*/
     #banner {
         margin-bottom: 62px;
@@ -400,9 +409,26 @@
     .collapse {
         margin-right: 20px;
     }
-    
-    
-    
+    .navbar ul li ul {
+        position: absolute;
+        width: 790px;
+        left: -574%;
+        visibility: hidden;
+        top: 19px;
+        transition: all linear .5s;
+        z-index: 9999;
+    }
+    .pro_m {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #nav_product {
+        margin: 20px;
+        padding-left: 15px;
+        background: #fff;
+        box-shadow: 0 0 7px -4px rgba(0, 0, 0, 0.74);
+        padding-right: 30px;
+    }
     /*========== Banner part start ==========*/
     
     #banner {
@@ -461,5 +487,56 @@
     
     
     
+    
+}
+
+
+/*========================================================================
+============================== 1200px devices ============================
+=========================================================================*/
+
+@media (min-width: 1100px) and (max-width: 1200.98px) {
+.navbar ul li ul {
+	width: 1189px;
+	left: -837%;
+	top: 19px;
+}
+.pro_m {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+    
+#nav_product {
+    margin: 20px;
+    padding-left: 15px;
+    background: #fff;
+    box-shadow: 0 0 7px -4px rgba(0, 0, 0, 0.74);
+    padding-right: 30px;
+}
+    
+}
+
+/*========================================================================
+============================== 1400px devices ============================
+=========================================================================*/
+
+@media (min-width: 1201px) and (max-width: 1400.98px) {
+.navbar ul li ul {
+	width: 1342px;
+	left: -1062%;
+	top: 19px;
+}
+.pro_m {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+    
+#nav_product {
+    margin: 20px;
+    padding-left: 15px;
+    background: #fff;
+    box-shadow: 0 0 7px -4px rgba(0, 0, 0, 0.74);
+    padding-right: 30px;
+}
     
 }
